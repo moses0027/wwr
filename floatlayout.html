@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>花卉分類</title>
+    <style>
+        body {
+            background-color: white;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr; /* 使用 fr 單位，比例為 1:2:1 */
+            grid-template-rows: auto auto; /* 第一行為文字，第二行為圖片 */
+            row-gap: 10px; /* 上下間距 */
+            column-gap: 20px; /* 左右間距 */
+            background-color: lightyellow;
+            padding: 20px;
+        }
+        .label {
+            background-color: aqua;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .image-box {
+            background-color: aqua;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .image-box img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="label">百合花</div>
+        <div class="label">野薑花</div>
+        <div class="label">水仙花</div>
+
+        <div class="image-box">
+            <img id="img1" src="百合花.jpg" alt="百合花">
+        </div>
+        <div class="image-box">
+            <img id="img2" src="野薑花.jpg" alt="野薑花">
+        </div>
+        <div class="image-box">
+            <img id="img3" src="水仙花.jpg" alt="水仙花">
+        </div>
+    </div>
+</body>
+</html>

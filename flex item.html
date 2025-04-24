@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>Flex 三區塊</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      font-weight: bold;
+    }
+
+    .wrapper {
+      background-color: #e6e6e6;
+      padding: 10px;
+    }
+
+    .header,
+    .footer {
+      background-color: #e6e6e6;
+      padding: 10px;
+      font-size: 20px;
+    }
+
+    .content {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 0;
+    }
+
+    .box {
+      flex: 1;
+      padding: 10px;
+      margin: 0 5px;
+      min-height: 200px;
+    }
+
+    .box1 {
+      background-color: rgb(30, 243, 58);
+    }
+
+    .box2 {
+      background-color: rgb(56, 191, 236);
+    }
+
+    .box3 {
+      background-color: rgb(236, 15, 15);
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="header">頁首</div>
+    <div class="content">
+      <div class="box box1">區塊1</div>
+      <div class="box box2">區塊2</div>
+      <div class="box box3">區塊3</div>
+    </div>
+    <div class="footer">頁尾</div>
+  </div>
+</body>
+</html>
